@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #0c2e61;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+form, .consulta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+input, select {
+    padding: 12px 14px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input {
+    flex: 1;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f9fafb;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #eeeeee;
+    border-left: 6px solid #faad14;
+}
+
+li.alta {
+    border-left-color: #ff4d4f;
+}
+
+li.media {
+    border-left-color: #faad14;
+}
+
+li.baixa {
+    border-left-color: #52c41a;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+li span {
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    flex: 1;
+}
+
+li.concluida span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.botoes-acao, .botoes-prioridade {
+    display: flex;
+    gap: 6px;
+}
+
+button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #1890ff;
+    color: #ffffff;
+}
+
+.btn-excluir {
+    background-color: #ff4d4f;
+    color: #ffffff;
+}
+
+.btn-prio {
+    background-color: #e4e6eb;
+    color: #333333;
+}
+
+.btn-prio.ativa-alta {
+    background-color: #ff4d4f;
+    color: #ffffff;
+}
+
+.btn-prio.ativa-media {
+    background-color: #faad14;
+    color: #ffffff;
+}
+
+.btn-prio.ativa-baixa {
+    background-color: #52c41a;
+    color: #ffffff;
+}
